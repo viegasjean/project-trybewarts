@@ -1,4 +1,19 @@
+body {
+    background-image: url(images/hogwarts.jpg);
+}
+
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 167, 145);
+    padding: 20px;
+    color: white;
+    height: 60px;
+}
+
+.trybewarts-header-logo {
+    height: 55px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(50, 167, 145);
@@ -10,9 +25,35 @@
 
 main {
     display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.house option {
+    flex-direction: row;
+}
+
+.family-content {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.family-content div {
+    display: flex;
+    flex-direction: column;
+    display: flex;
 }
 
 #evaluation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#evaluation-form div {
+    display: flex;
+    align-items: stretch;
     display: flex;
     flex-direction: column;
     width: 675px;
@@ -20,4 +61,19 @@ main {
 
 #trybewarts-forms-logo {
     height: 500px;
+}
+
+input,
+select,
+button {
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+    border: 0px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    height: 50px;
 }

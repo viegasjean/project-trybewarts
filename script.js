@@ -23,6 +23,7 @@ for (let i = 1; i <= 10; i += 1) {
     evaluationForm.appendChild(radio);
 }
 
+
 function entrar() {
     const check = document.getElementById('agreement');
     check.addEventListener('change', () => {

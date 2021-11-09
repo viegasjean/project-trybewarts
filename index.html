@@ -35,26 +35,33 @@
           </select>
             </div>
             <h4 id="label-family">Qual sua família?</h4>
-            <label for="frontend">Frontend</label>
-            <input id="frontend" type="radio" name="family" value="Frontend" />
-            <label for="backend">Backend</label>
-            <input id="backend" type="radio" name="family" value="Backend" />
-            <label for="fullstack">FullStack</label>
-            <input id="fullstack" type="radio" name="family" value="FullStack" />
+            <fieldset>
+                <label for="frontend">Frontend</label>
+                <input id="frontend" type="radio" name="family" value="Frontend" />
+                <label for="backend">Backend</label>
+                <input id="backend" type="radio" name="family" value="Backend" />
+                <label for="fullstack">FullStack</label>
+                <input id="fullstack" type="radio" name="family" value="FullStack" />
+            </fieldset>
+
 
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-            <label for="HoFs">HoFs</label>
-            <input type="checkbox" value="HoFs" name="" id="HoFs">
-            <label for="Jest">Jest</label>
-            <input type="checkbox" value="Jest" name="" id="Jest">
-            <label for="Promises">Promises</label>
-            <input type="checkbox" value="Promises" name="" id="Promises">
-            <label for="React">React</label>
-            <input type="checkbox" value="React" name="" id="React">
-            <label for="SQL">SQL</label>
-            <input type="checkbox" value="SQL" name="" id="SQL">
-            <label for="Python">Python</label>
-            <input type="checkbox" value="Python" name="" id="Python">
+            <fieldset>
+                <label for="HoFs">HoFs</label>
+                <input type="checkbox" value="HoFs" name="" id="HoFs">
+                <label for="Jest">Jest</label>
+                <input type="checkbox" value="Jest" name="" id="Jest">
+                <label for="Promises">Promises</label>
+                <input type="checkbox" value="Promises" name="" id="Promises">
+                <label for="React">React</label>
+                <input type="checkbox" value="React" name="" id="React">
+                <label for="SQL">SQL</label>
+                <input type="checkbox" value="SQL" name="" id="SQL">
+                <label for="Python">Python</label>
+                <input type="checkbox" value="Python" name="" id="Python">
+
+            </fieldset>
+
 
             <div id="text">
                 <label for="textarea" class="textarea">Deixe seu comentário:</label>
@@ -70,10 +77,12 @@
                 <button id="submit-btn" type="submit" disabled>Enviar</button>
             </div>
 
+            <fieldset>
+                <div id="rates">
+                    <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+                </div>
+            </fieldset>
 
-            <div id="rates">
-                <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-            </div>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="" />
         <script src="script.js"></script>
