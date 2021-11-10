@@ -9,19 +9,19 @@ btEnter.addEventListener('click', () => {
     }
 });
 
-const evaluationForm = document.getElementById('rates');
+// const evaluationForm = document.getElementById('rates');
 
-for (let i = 1; i <= 10; i += 1) {
-    const radio = document.createElement('input');
-    radio.type = 'radio';
-    radio.value = i;
-    radio.name = 'rate';
-    const label = document.createElement('label');
-    label.htmlFor = 'rate';
-    label.innerText = i;
-    evaluationForm.appendChild(label);
-    evaluationForm.appendChild(radio);
-}
+//for (let i = 1; i <= 10; i += 1) {
+//  const radio = document.createElement('input');
+//    radio.type = 'radio';
+//  radio.value = i;
+//radio.name = 'rate';
+//    const label = document.createElement('label');
+//    label.htmlFor = 'rate';
+//    label.innerText = i;
+//    evaluationForm.appendChild(label);
+//    evaluationForm.appendChild(radio);
+//}
 
 
 function entrar() {
