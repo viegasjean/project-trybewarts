@@ -114,3 +114,11 @@ span {
 .inputs div input {
   width: 45%;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(60, 64, 74);
+  color: white;
+}
