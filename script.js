@@ -22,7 +22,7 @@ text.addEventListener('input', (e) => {
 // Funcionalidade de substituir formulario por informações preenchidas
 const btSubmit = document.getElementById('submit-btn');
 // eslint-disable-next-line max-lines-per-function
-function fillInfo(e) {
+/* function fillInfo(e) {
   e.preventDefault();
   const name = document.getElementById('input-name').value;
   const lastName = document.getElementById('input-lastname').value;
@@ -44,6 +44,25 @@ function fillInfo(e) {
                 Matérias: ${learnsValue}
                 Avaliação: ${rate}
                 Observações: ${textarea}`;
+  form.appendChild(p);
+} */
+
+function fillInfo(e) {
+  e.preventDefault();
+  const learns = document.querySelectorAll('input[name="learn"]:checked');
+  let learnsValue = '';
+  learns.forEach((elem) => { learnsValue += `${elem.value}, `; });
+  const p = document.createElement('p');
+  p.innerText = `Nome: ${document.getElementById('input-name').value} ${
+    document.getElementById('input-lastname').value}
+                Email: ${document.getElementById('input-email').value}
+                Casa: ${document.getElementById('house').value}
+                Família: ${document.querySelector('input[name="family"]:checked').value}
+                Matérias: ${learnsValue}
+                Avaliação: ${document.querySelector('input[name="rate"]:checked').value}
+                Observações: ${text.value}`;
+  const form = document.getElementById('evaluation-form');
+  form.innerHTML = '';
   form.appendChild(p);
 }
 
