@@ -37,13 +37,11 @@ main {
   height: 500px;
 }
 
-input,
-select,
-button {
+input , select , button {
   border-radius: 5px;
   height: 40px;
   margin: 5px;
-  border: 0px;
+  border: none;
 }
 
 button {
@@ -57,10 +55,6 @@ button {
   align-items: stretch;
 }
 
-.inputs div input {
-  width: 45%;
-}
-
 .family-container {
   display: flex;
   flex-direction: column;
@@ -68,8 +62,7 @@ button {
 
 .learn-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 #rates {
@@ -116,4 +109,8 @@ span {
 
 .checkboxes-radios input {
   height: fit-content;
+}
+
+.inputs div input {
+  width: 45%;
 }
